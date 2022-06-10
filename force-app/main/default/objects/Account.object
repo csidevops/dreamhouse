@@ -503,7 +503,9 @@
     </fields>
     <fields>
         <fullName>sample__c</fullName>
+        <description>This is sample description - 10/06</description>
         <externalId>false</externalId>
+        <inlineHelpText>This is sample help text - 10/06</inlineHelpText>
         <label>sample</label>
         <length>255</length>
         <required>false</required>
