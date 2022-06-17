@@ -48,7 +48,7 @@ private class TestPropertyController {
         Property__c property = new Property__c(Name = 'Name');
         insert property;
 
-        // Insert mock picture
+        // Insert mock picture - adding comment to check flexdeploy discover files check
         ContentVersion picture = new Contentversion();
         picture.Title = MOCK_PICTURE_NAME;
         picture.PathOnClient = 'picture.png';
