@@ -30,7 +30,7 @@ private class TestPropertyController {
         Test.stopTest();
         System.assertEquals(5, result.records.size());
     }
-  // Comment added for testing purpose
+  
     static testMethod void testGetPicturesNoResults() {
         Property__c property = new Property__c(Name = 'Name');
         insert property;
