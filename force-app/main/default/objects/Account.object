@@ -503,9 +503,9 @@
     </fields>
     <fields>
         <fullName>sample__c</fullName>
-        <description>This is sample description - 20/06/2022 - discover file check</description>
+        <description>This is sample description - 17/06/2022 - discover file check</description>
         <externalId>false</externalId>
-        <inlineHelpText>This is sample help text - 20/06/2022 - discover file check</inlineHelpText>
+        <inlineHelpText>This is sample help text - 17/06/2022 - discover file check</inlineHelpText>
         <label>sample</label>
         <length>255</length>
         <required>false</required>
