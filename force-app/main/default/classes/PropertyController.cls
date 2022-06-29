@@ -72,7 +72,8 @@ public with sharing class PropertyController {
                 AND Baths__c >= :safeMinBathrooms
 //04/09/2022 - Commented to remove the permission error in Apex Test run
 //06/29/2022 - Included the security enforced option
-            WITH SECURITY_ENFORCED
+//06/29/2022 - Commented again 
+//            WITH SECURITY_ENFORCED
             ORDER BY Price__c
             LIMIT :safePageSize
             OFFSET :offset
