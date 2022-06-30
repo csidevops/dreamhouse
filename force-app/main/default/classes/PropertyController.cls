@@ -71,7 +71,7 @@ public with sharing class PropertyController {
                 AND Beds__c >= :safeMinBedrooms
                 AND Baths__c >= :safeMinBathrooms
 //04/09/2022 - Commented to remove the permission error in Apex Test run
-//          WITH SECURITY_ENFORCED
+          WITH SECURITY_ENFORCED
             ORDER BY Price__c
             LIMIT :safePageSize
             OFFSET :offset
@@ -93,7 +93,7 @@ public with sharing class PropertyController {
                 LinkedEntityId = :propertyId
                 AND ContentDocument.FileType IN ('PNG', 'JPG', 'GIF')
 //04/09/2022 - Commented to remove the permission error in Apex Test run        
-//          WITH SECURITY_ENFORCED
+          WITH SECURITY_ENFORCED
         ];
 
         if (links.isEmpty()) {
@@ -111,7 +111,7 @@ public with sharing class PropertyController {
             FROM ContentVersion
             WHERE ContentDocumentId IN :contentIds AND IsLatest = TRUE
 //04/09/2022 - Commented to remove the permission error in Apex Test run            
-//          WITH SECURITY_ENFORCED
+          WITH SECURITY_ENFORCED
             ORDER BY CreatedDate
         ];
     }
