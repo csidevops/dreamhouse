@@ -37,6 +37,4 @@ $RECYCLE.BIN/
 # VS Code project settings
 .vscode/*
 !.vscode/extensions.json
-
-# CleanDataSerives 
-**/cleanDataServices/**
+force-app/main/default/cleanDataServices/DataCloudGeoLocation.cleanDataService
