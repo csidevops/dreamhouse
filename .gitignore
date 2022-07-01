@@ -39,4 +39,4 @@ $RECYCLE.BIN/
 !.vscode/extensions.json
 
 # CleanDataSerives 
-force-app/main/default/cleanDataServices/
+force-app/main/default/cleanDataServices/*
