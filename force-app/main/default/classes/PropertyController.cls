@@ -71,7 +71,7 @@ public with sharing class PropertyController {
                 AND Beds__c >= :safeMinBedrooms
                 AND Baths__c >= :safeMinBathrooms
 //To enforce security remove the below commented line
-//          WITH SECURITY_ENFORCED
+            WITH SECURITY_ENFORCED
             ORDER BY Price__c
             LIMIT :safePageSize
             OFFSET :offset
@@ -93,7 +93,7 @@ public with sharing class PropertyController {
                 LinkedEntityId = :propertyId
                 AND ContentDocument.FileType IN ('PNG', 'JPG', 'GIF')
 //To enforce security remove the below commented line
-//          WITH SECURITY_ENFORCED
+            WITH SECURITY_ENFORCED
         ];
 
         if (links.isEmpty()) {
@@ -111,7 +111,7 @@ public with sharing class PropertyController {
             FROM ContentVersion
             WHERE ContentDocumentId IN :contentIds AND IsLatest = TRUE
 //To enforce security remove the below commented line
-//          WITH SECURITY_ENFORCED
+            WITH SECURITY_ENFORCED
             ORDER BY CreatedDate
         ];
     }
