@@ -70,7 +70,7 @@ public with sharing class PropertyController {
                 AND Price__c <= :safeMaxPrice
                 AND Beds__c >= :safeMinBedrooms
                 AND Baths__c >= :safeMinBathrooms
-//To enforce security remove the below commented line - Testing webhook for flexdeploy - 001
+//To enforce security remove the below commented line - Testing webhook for flexdeploy - 002
             WITH SECURITY_ENFORCED
             ORDER BY Price__c
             LIMIT :safePageSize
